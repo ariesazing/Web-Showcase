@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Showcase Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="loading-screen">
+  <div class="loading-content">
+    <div class="loading-spinner">
+      <div class="spinner-particle"></div>
+      <div class="spinner-particle"></div>
+      <div class="spinner-particle"></div>
+    </div>
+    <div class="loading-progress">
+      <div class="progress-bar"></div>
+    </div>
+    <div class="loading-text">Initializing Web Showcase</div>
+  </div>
+  </div>
+  
+  <div id="particles-js"></div>
+  
+  <!-- Notification Banner -->
+  <div id="notification-banner">Welcome to the Rice Fields!</div>
+
+  <!-- Navigation -->
+<nav>
+  <div class="logo"><p id="jquery-title"><i>jQuery</i></p> <p id="WebShowcase-title">Web Showcase</p></div>
+  
+  <!-- Hamburger Icon -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <!-- Nav Menu -->
+  <ul class="nav-links">
+    <li><a id="homi" href="#home">Home</a></li>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#dashboard">Dashboard</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="section">
+    <div class="hero">
+      <div class="hero-text">
+        <span class="intro-label">INTRODUCING OUR</span>
+        <h1>WEB SHOWCASE</h1>
+        <p>
+          An interactive, multi-section website designed using modern HTML, CSS, and jQuery.
+          (and no ChatGPT) no cap.
+          <img src="images/pngwing.png" alt="Letter Icon" class="inline-letter">
+        </p>
+
+
+      </div>
+      <div class="hero-image">
+        <img src="images/sk.png" alt="Robot Illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile Section -->
+  <section id="profile" class="section">
+    <h2>Profile</h2>
+    <button id="toggle-profile">Toggle Profile</button>
+    <div id="profile-card">
+      <img src="images/gojo.png" alt="Profile Picture">
+      <p>Hello, Welcome to our Web Showcase :)</p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <h2>Features</h2>
+
+    <div class="feature">
+      <div class="feature-header">
+        <button class="toggle-detail">-</button>
+        <h3 class="feature-title">Improved UI Interactions</h3>
+      </div>
+      <div class="feature-detail">Enhance user experience by allowing dynamic interactions such as drag-and-drop
+        elements, accordions, tabs, sliders, tooltips, and real-time validation. These features can greatly improve the
+        look and usability of your website without heavy coding.</div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-header">
+        <button class="toggle-detail">-</button>
+        <h3 class="feature-title">Well-Documented and Supported</h3>
+      </div>
+      <div class="feature-detail">Extensively documented, making it easy to learn and troubleshoot.</div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-header">
+        <button class="toggle-detail">-</button>
+        <h3 class="feature-title">Extensive Plugin Ecosystem</h3>
+      </div>
+      <div class="feature-detail">Has a massive collection of plugins created by the community. These plugins extend the
+        core functionality to include features like form validation, image sliders, modals, carousels, tooltips, date
+        pickers, and more. </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-header">
+        <button class="toggle-detail">-</button>
+        <h3 class="feature-title">Method Chaining</h3>
+      </div>
+      <div class="feature-detail">Allows you to chain multiple methods together, improving readability and reducing the
+        need for repetitive code.</div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-header">
+        <button class="toggle-detail">-</button>
+        <h3 class="feature-title">AJAX Integration</h3>
+      </div>
+      <div class="feature-detail">Enables you to load data from the server without refreshing the entire page. This is
+        essential for creating dynamic, responsive web applications.</div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="images/image1.png" class="gallery-img" alt="Gallery Image 1">
+        <img src="images/image2.png" class="gallery-img" alt="Gallery Image 2">
+        <img src="images/image3.jpg" class="gallery-img" alt="Gallery Image 3">
+        <img src="images/image4.png" class="gallery-img" alt="Gallery Image 4">
+        <img src="images/image5.png" class="gallery-img" alt="Gallery Image 5">
+        <img src="images/image6.png" class="gallery-img" alt="Gallery Image 6">
+
+    </div>
+    <button id="animate-gallery">Animate Gallery</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <h4 class="question">What is this?</h4>
+      <div class="answer">It's a jQuery showcase project goofball.</div>
+
+      <h4 class="question">Why use jQuery?</h4>
+      <div class="answer">Ummmm.... because it is a jQuery showcase?</div>
+
+      <h4 class="question">Why am I here?</h4>
+      <div class="answer">idk</div>
+    </div>
+  </section>
+
+  <!-- Dashboard Section -->
+<section id="dashboard" class="section">
+  <h2>Interactive Dashboard</h2>
+  <div id="dashboard-wrapper">
+    <div id="dashboard-sidebar">
+      <h3>Controls</h3>
+      <button id="shift-boxes">Scatter Images</button>
+      <button id="reset-boxes">Reset Layout</button>
+      <button id="randomize-images">Randomize Images</button>
+    </div>
+    <div class="dashboard-content">
+      <div id="dashboard-container">
+        <div class="image-box">
+          <img src="images/granada.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="image-box">
+          <img src="images/rolbox.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="image-box">
+          <img src="images/alaska.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="image-box">
+          <img src="images/panganiban.jpg" alt="Gallery Image 4">
+        </div>
+        <div class="image-box">
+          <img src="images/man.jpg" alt="Gallery Image 5">
+        </div>
+        <div class="image-box">
+          <img src="images/mendoza.jpg" alt="Gallery Image 6">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script src="js/script.js" defer></script>
+  <script src="js/particles.js"></script>
+</body>
+
+</html>
